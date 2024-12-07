@@ -1,2 +1,5 @@
 # MLR503-Final
-Notes and other content for the MLR503 - Data Mining and Knowledge Discovery final exam.
+
+We will be ignoring the first two sets of slides because they're just introductions to the course and setting up the machine. There will be no theory for these two parts. 
+
+

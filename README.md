@@ -2,6 +2,16 @@
 
 This repo contains everything you need to know for the final exam, both the theory and the programming part. We will begin by going over the theory. 
 
+The content that is covered in the final is comprehensive, as follows: 
+- Data pre-processing and preparation
+- Uninvariate linear regression
+- Multivariate linear regression
+- Decision trees
+- Anomaly detection
+- SVMs
+-  eXplainable AI
+-  Unsupervised learning (PCA, tSNE, feature selection and dimensionality reduction)
+
 ## Lessons / Chapters (Slides)
 - [Lesson 3 - DATA, CORRELATIONS, PREPROCESSING, AND PREPARATION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%203.md) \[Notes completed :heavy_check_mark:\]
 - [Lesson 4 - SUPERVISED LEARNING – LINEAR REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%204.md) \[Notes pending :x:\]

@@ -77,10 +77,15 @@ To make things look nicer and all, we can represent things as vectors.
 ```math
   \begin{align}
     x & = \begin{bmatrix}
+           x_0 = 1\\
            x_{1} \\
            x_{2} \\
-           vdots \\
+           \vdots \\
            x_{n}
          \end{bmatrix} \in \mathbb{R}^{n+1}
   \end{align},
 ```
+
+Using this notation, we can re-write $h_w (x) = w_0 + w_1 x + w_2 x_2 + ... + w_n x_n$ as $h_w (x) = w^{\top} x$. We can then also re-write the cost function: 
+
+$$J(w) = \frac{1}{2m} \sum_{i = 1}^{m} (w^{\top}x_i - y_i)^2$$

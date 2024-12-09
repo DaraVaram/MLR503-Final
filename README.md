@@ -17,8 +17,8 @@ The content that is covered in the final is comprehensive, as follows:
 - [Lesson 4 - SUPERVISED LEARNING – LINEAR REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%204.md) \[Notes completed :heavy_check_mark:\]
 - [Lesson 5 - SUPERVISED LEARNING – LOGISTIC REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%205.md) \[Notes completed :heavy_check_mark:\]
 - [Lesson 6 - SUPERVISED LEARNING – REGULARIZATION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%206.md) \[Notes completed :heavy_check_mark:, but table missing.\]
-- [Lesson 7 - SUPERVISED LEARNING – DECISION TREES AND TREE ENSEMBLES](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%207.md) \[Notes pending :x:\]
-- [Lesson 7 - UNSUPERVISED LEARNING – ANOMALY DETECTION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%207.md) \[Notes pending :x:\]
+- [Lesson 7 - SUPERVISED LEARNING – DECISION TREES AND TREE ENSEMBLES](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%207.md)  \[Notes completed :heavy_check_mark:\]
 - [Lesson 8 - SUPERVISED LEARNING – SUPPORT VECTOR MACHINES](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%208.md) \[Notes pending :x:\]
+- [Lesson 9 - UNSUPERVISED LEARNING – ANOMALY DETECTION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%207.md) \[Notes pending :x:\]
 - [Lesson 11 - FEATURE SELECTION AND DIMENSIONALITY REDUCTION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%2011.md) \[Notes pending :x:\]
 

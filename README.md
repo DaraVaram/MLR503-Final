@@ -14,7 +14,7 @@ The content that is covered in the final is comprehensive, as follows:
 
 ## Lessons / Chapters (Slides)
 - [Lesson 3 - DATA, CORRELATIONS, PREPROCESSING, AND PREPARATION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%203.md) \[Notes completed :heavy_check_mark:\]
-- [Lesson 4 - SUPERVISED LEARNING – LINEAR REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%204.md) \[Notes pending :x:\]
+- [Lesson 4 - SUPERVISED LEARNING – LINEAR REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%204.md) \[Notes completed :heavy_check_mark:\]
 - [Lesson 5 - SUPERVISED LEARNING – MULTIVARIATE LINEAR REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%205.md) \[Notes pending :x:\]
 - [Lesson 6 - SUPERVISED LEARNING – DECISION TREES AND TREE ENSEMBLES](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%206.md) \[Notes pending :x:\]
 - [Lesson 7 - UNSUPERVISED LEARNING – ANOMALY DETECTION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%207.md) \[Notes pending :x:\]

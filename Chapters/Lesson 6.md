@@ -26,8 +26,6 @@ $$w_1 = w_1(1 - \alpha \frac{\lambda}{m}) - \alpha \frac{1}{m} \sum_{i = 1}^m (h
 
 We can actually use the closed-form normal equation in this case. The formula for the new $w$ would be as follows: 
 
-$$w = (X^{\top}X + \lambda \begin{pmatrix} 0  & 0 \\ 0  & I  \end{pmatrix}) X^{\top} y$$
-
 ```math
   \begin{align}
     w & =(X^{\top}X + \lambda & \begin{bmatrix}

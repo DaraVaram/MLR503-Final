@@ -89,3 +89,36 @@ To make things look nicer and all, we can represent things as vectors.
 Using this notation, we can re-write $h_w (x) = w_0 + w_1 x + w_2 x_2 + ... + w_n x_n$ as $h_w (x) = w^{\top} x$. We can then also re-write the cost function: 
 
 $$J(w) = \frac{1}{2m} \sum_{i = 1}^{m} (w^{\top}x_i - y_i)^2$$
+
+Let's do the derivation for the closed-form solution. Because we can. 
+
+$$J(w) = \frac{1}{2m} \sum_{i = 1}^{m} (w^{\top}x_i - y_i)^2$$
+$$J(w) = \frac{1}{2m} \sum_{i = 1}^{m} (Xw - y)^{\top}(Xw-y)$$
+$$J(w) = \frac{1}{2m} \[w^{\top}X^{\top}X w - 2w^{\top} X^{\top}y - y^{\top} y\]$$
+
+We take the derivative w.r.t. $w$ and set it to 0: 
+
+$$\frac{\partial J(w)}{\partial w} \frac{1}{m} \[ (X^{\top} X)^{-1} X^{\top}y\]$$
+
+This is the closed-form solution. Very nice. How what is OLS?
+
+### Ordinary Least Squares: 
+
+$$w_1 = \frac{\sum_{i=1}^{m} (x_i - \bar{x}) (y_i - \bar{y})}{\sum_{i=1}^{m} (x_i - \bar{x})}$$
+
+$$w_0 = \bar{y} - w_1 x $$
+
+When do we use the closed-form? When we have some $n \leq 1000$. Honestly this is open to interpretation. 
+
+### Metrics
+
+$$\text{RMSE} = \sqrt{\frac{1}{m} \sum_{i = 1}^{m} (y_i - \hat{y_i})^2}$$
+
+This is interpretable. On average, the model's predictions are off by RMSE amount. There are some other metrics but they're more or less useless. He won't ask about that stuff, right?
+
+### Interpretability
+- $w_0$: When all the input variables are 0, what is the predicted outcome of the model?
+- $w_n$: For every one-unit increase in $x_1$, the target variable increases by $w_1$, assuming that the other input features are constant
+
+#### Multi-collinearity: 
+When two features are highly correlated, they both explain a lot of the variance for the target variable. Therefore, models are not able to distinguish which one is actually contributing to the outcome. That's it really. We might see weird signs or inflated / deflated values because the model is trying to compensate. 

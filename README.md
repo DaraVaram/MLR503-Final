@@ -1,4 +1,4 @@
-# MLR503-Final
+# Resources for MLR503 - Data Mining and Knowledge Discovery
 
 This repo contains everything you need to know for the final exam, both the theory and the programming part. We will begin by going over the theory. 
 

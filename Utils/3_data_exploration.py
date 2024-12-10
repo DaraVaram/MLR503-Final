@@ -1,0 +1,103 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
+from scipy.stats import pearsonr, spearmanr, chi2_contingency, pointbiserialr
+from sklearn.impute import SimpleImputer
+
+##### Data exploration #####
+
+def print_missing(df):
+    missing_data = df.isnull().sum()
+    print("Missing Data in the Titanic Dataset:\n", missing_data)
+
+def drop_columns(df, cols):
+    '''
+    cols = [col1, col2, ...]
+    '''
+    return df.drop(cols, axis=1)
+
+def concat_df(dfs):
+    '''
+    dfs = [df1, df2, ...]
+    '''
+    return pd.concat(dfs, axis=1)
+
+##### Visualizing attributes #####
+
+def visualize_numerical_attribute(df, col):
+    print("Mean = ", df[col].mean())
+    print("Median = ", df[col].mean())
+    print("Range = ", df[col].max() - df[col].min())
+
+    sns.histplot(df[col], kde=True)
+    plt.title(f"{col} Distribution")
+    plt.show()
+
+def visualize_categorical_attribute(df, col):
+    print(df[col].value_counts())
+
+    sns.countplot(data=df, x=col)
+    plt.title(f"Frequency of {col}")
+    plt.show()
+
+##### Imputing missing values #####
+
+def impute(df, col, strat):
+    '''
+    strat could be anything in ['median', 'mean', 'mode']
+    '''
+    imputer = SimpleImputer(strategy='most_frequent' if strat == 'mode' else strat)
+    return imputer.fit_transform(df[[col]])
+
+##### Calculate correlations #####
+
+def print_numerical_corr(df, attribute_A, attribute_B, test):
+    if test == 'pearson':
+        corr, p_value = pearsonr(df[attribute_A], df[attribute_B])
+    elif test == 'spearman':
+        corr, p_value = spearmanr(df[attribute_A], df[attribute_B])
+    elif test == 'point biserial':
+        corr, p_value = pointbiserialr(df[attribute_A], df[attribute_B])
+
+    print(f"{test} correlation between {attribute_A} and {attribute_B}: {corr}, p-value: {p_value}")
+
+def print_categorical_corr(df, attribute_A, attribute_B):
+    contingency_table = pd.crosstab(df[attribute_A], df[attribute_B])
+    chi2, p_value, dof, expected = chi2_contingency(contingency_table)
+
+    print(f"Chi-squared Test Statistic: {chi2}")
+    print(f"p-value: {p_value}")
+    print(f"Degrees of Freedom: {dof}")
+
+##### Handle skewness #####
+
+def apply_log(df, col):
+    ''' 
+    Apply log(1 + x) transformation to handle skewness in the data
+    '''
+    return np.log1p(df[col])
+
+##### Scale features #####
+
+def standard_scaler(df, cols):
+    scaler = StandardScaler()
+    return scaler.fit_transform(df[cols])
+
+def one_hot_encoder(df, cols):
+    '''
+    One-hot encoding nominal categorical variables
+    '''
+    encoder = OneHotEncoder(sparse_output=False, drop='first')
+    encoded_cols = encoder.fit_transform(df[cols])
+    return pd.DataFrame(encoded_cols, columns=encoder.get_feature_names_out(cols))
+
+def ordinal_encoder(df, cols):
+    '''
+    Ordinal encoding ordinal categorical variables
+    '''
+    encoder = OrdinalEncoder()
+    encoded_cols = encoder.fit_transform(df[cols])
+    return pd.DataFrame(encoded_cols, columns=cols)

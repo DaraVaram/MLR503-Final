@@ -126,7 +126,7 @@ Such that:
 
 #### Parameters used for SVMs: 
 
-Recall that $C = \frac{1}{\lambda}. Then: 
+Recall that $C = \frac{1}{\lambda}$. Then: 
 
 - For large $C$ (or in other words, small $\lambda$), we would have lower bias but higher variance
 - For small $C$ (or large $\lambda$, we would have low variance but higher bias.

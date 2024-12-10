@@ -30,6 +30,15 @@ The content that is covered in the final is comprehensive, as follows:
 ## Notebooks
 These are all the notebooks that were used to present things in class. 
 
+- [Lesson 3 - DATA EXPLORATION](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/Lesson%203%20-%20DATA%20EXPLORATION.ipynb) \[Completed Notebook :heavy_check_mark:\]
+- [Lesson 4 - LINEAR REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/Lesson%204%20-%20LINEAR%20REGRESSION.ipynb) \[Completed Notebook :heavy_check_mark:\]
+- [Lesson 5 - LOGISTIC REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/Lesson%205%20-%20LOGISTIC%20REGRESSION.ipynb) \[Completed Notebook :heavy_check_mark:\]
+- [Lesson 7 - DECISION TREES AND ENSEMBLES](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/Lesson%207%20-%20DECISION%20TREES%20AND%20ENSEMBLES.ipynb) \[Completed Notebook :heavy_check_mark:\]
+- [Lesson 8 - SUPPORT VECTOR MACHINES](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/Lesson%208%20-%20SUPPORT%20VECTOR%20MACHINES.ipynb) \[Completed Notebook :heavy_check_mark:\]
+- [Lesson 9 - ANOMALY DETECTION](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/Lesson%209%20-%20ANOMALY%20DETECTION.ipynb) \[Completed Notebook :heavy_check_mark:\]
+- [Lesson 11 - PRINCIPLE COMPONENT ANALYSIS](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/Lesson%2011%20-%20PRINCIPLE%20COMPONENT%20ANALYSIS.ipynb) \[Completed Notebook :heavy_check_mark:\]
+- [Lesson 11 - $t$-SNE](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/LESSON%2011%20-%20tSNE.ipynb) \[Incomplete notebook - Takes too long to run :x:\]
+ 
 ## Assignments
 
 ## Data Science Challenges

@@ -22,3 +22,7 @@ The content that is covered in the final is comprehensive, as follows:
 - [Lesson 9 - UNSUPERVISED LEARNING – ANOMALY DETECTION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%209.md) \[Notes completed :heavy_check_mark:\]
 - [Lesson 11 - FEATURE SELECTION AND DIMENSIONALITY REDUCTION](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%2011.md) \[Notes completed :heavy_check_mark:\]
 
+
+## Exams (Midterm)
+- [Original Midterm Exam](https://github.com/DaraVaram/MLR503-Final/blob/main/Exams/My%20solutions/MLR503%20Exam%20I%20Solutions%20(Dara).pdf) \[Solved :heavy_check_mark:\]
+- [Makeup Midterm Exam]() \[Not solved yet :x:\]

@@ -25,7 +25,7 @@ The content that is covered in the final is comprehensive, as follows:
 
 ## Exams (Midterm)
 - [Original Midterm Exam](https://github.com/DaraVaram/MLR503-Final/blob/main/Exams/My%20solutions/MLR503%20Exam%20I%20Solutions%20(Dara).pdf) \[Solved :heavy_check_mark:\]
-- [Makeup Midterm Exam]() \[Not solved yet :x:\]
+- [Makeup Midterm Exam]() \[Solved :heavy_check_mark: (This is very similar to the original anyway)\]
 
 ## Notebooks
 These are all the notebooks that were used to present things in class. 

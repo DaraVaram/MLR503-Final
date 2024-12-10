@@ -7,17 +7,6 @@ This repo contains the following:
 - Solutions to midterm (both original and makeup midterm)
 - A compilation of functions in a singular utils.py for reference during the final 
 
-The content that is covered in the final is comprehensive, as follows:
-
-- Data pre-processing and preparation
-- Uninvariate linear regression
-- Multivariate linear regression
-- Decision trees
-- Anomaly detection
-- SVMs
-- eXplainable AI
-- Unsupervised learning (PCA, tSNE, feature selection and dimensionality reduction)
-
 ## Data Science Challenges
 - [Challenge 1]() \[Pending :x:\]
 - [Challenge 2]() \[Pending :x:\]

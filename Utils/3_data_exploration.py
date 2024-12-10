@@ -10,8 +10,12 @@ from sklearn.impute import SimpleImputer
 ##### Data exploration #####
 
 def print_missing(df):
-    missing_data = df.isnull().sum()
-    print("Missing Data in the Titanic Dataset:\n", missing_data)
+    pd.set_option('display.max_colwidth', None)
+    pd.DataFrame({'Frequency': df.isnull().sum(), 'Percentage': df.isnull().sum() / len(df) * 100})
+
+def print_unique(df, cols):
+    for col in cols:
+        print(f'{col:15}: {df[col].unique()}')
 
 def drop_columns(df, cols):
     '''
@@ -28,9 +32,11 @@ def concat_df(dfs):
 ##### Visualizing attributes #####
 
 def visualize_numerical_attribute(df, col):
-    print("Mean = ", df[col].mean())
-    print("Median = ", df[col].mean())
-    print("Range = ", df[col].max() - df[col].min())
+    print(f"Median of {col}: {df[col].median()}")
+    print(f"Mode of {col}: {df[col].mode()[0]}")
+    print(f"Max of {col}: {df[col].max()}")
+    print(f"Min of {col}: {df[col].min()}")
+    print(f"Range of {col}: {df[col].max() - df[col].min()}\n")
 
     sns.histplot(df[col], kde=True)
     plt.title(f"{col} Distribution")
@@ -39,7 +45,7 @@ def visualize_numerical_attribute(df, col):
 def visualize_categorical_attribute(df, col):
     print(df[col].value_counts())
 
-    sns.countplot(data=df, x=col)
+    sns.countplot(data=df, x=col, order=df[col].value_counts().index)
     plt.title(f"Frequency of {col}")
     plt.show()
 

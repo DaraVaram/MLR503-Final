@@ -3,7 +3,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
+from sklearn.preprocessing import MinMaxScaler, StandardScaler, OneHotEncoder, OrdinalEncoder
 from scipy.stats import pearsonr, spearmanr, chi2_contingency, pointbiserialr
 from sklearn.impute import SimpleImputer
 
@@ -88,9 +88,18 @@ def apply_log(df, col):
 
 ##### Scale features #####
 
-def standard_scaler(df, cols):
+def standard_scaler(X_train, X_test):
+    '''Assuming X_train is a DataFrame'''
     scaler = StandardScaler()
-    return scaler.fit_transform(df[cols])
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test) # Optional
+    return scaler, X_train_scaled, X_test_scaled
+
+def min_max_scaler(X_train, X_test):
+    scaler = MinMaxScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test) # Optional
+    return scaler, X_train_scaled, X_test_scaled
 
 def one_hot_encoder(df, cols):
     '''

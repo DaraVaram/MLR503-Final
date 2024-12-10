@@ -26,3 +26,15 @@ The content that is covered in the final is comprehensive, as follows:
 ## Exams (Midterm)
 - [Original Midterm Exam](https://github.com/DaraVaram/MLR503-Final/blob/main/Exams/My%20solutions/MLR503%20Exam%20I%20Solutions%20(Dara).pdf) \[Solved :heavy_check_mark:\]
 - [Makeup Midterm Exam]() \[Not solved yet :x:\]
+
+## Notebooks
+These are all the notebooks that were used to present things in class. 
+
+## Assignments
+
+## Data Science Challenges
+- [Challenge 1]() \[Pending :x:\]
+- [Challenge 2]() \[Pending :x:\]
+
+## Other practical things
+Exploring different datasets, etc... Prof. mentioned that the final exam will have a time-series aspect to it, so these datasets should relate to that as well.

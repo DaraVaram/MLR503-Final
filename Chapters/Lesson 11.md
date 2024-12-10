@@ -16,3 +16,15 @@ For categorical vs. categorical:
 $$\text{Cramer's V: } \sqrt{\frac{\chi^2}{n(k-1)}}$$
 
 This shows only the magnitude of the association, between 0 and 1.
+
+For numerical vs. categorical: 
+
+We take the correlation ratio ($\eta$)
+
+$$\eta^2 = \frac{\text{SS}_{\text{between}}}{\text{SS} _{\text{total}}}$$
+
+We take the square root such that $\eta = \sqrt{\eta^2}. This gives us the magnitude of the association between 0 and 1.
+
+### High-dimensional data:
+
+We often deal with data that is not very easy to visualize. 

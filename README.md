@@ -13,11 +13,11 @@ This repo contains the following:
 
 ## Exams (Midterms)
 - [Original Midterm Exam](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Exams/Questions/MLR%20503%20Original%20Exam.pdf) \[Not gonna do it again\]
-- [Makeup Midterm Exam]() \[Not solved yet :x:\]
+- [Makeup Midterm Exam](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Exams/My%20solutions/MLR%20503%20Makeup%20Exam.pdf) \[Completed :heavy_check_mark:\]
 
 ## Notes
 - [Midterm Notes](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Notes/Midterm%20Notes.pdf) covering lessons 3-7. \[Notes completed :heavy_check_mark:\]
-- [Final Notes](https://github.com/DaraVaram/MLR503-Final/blob/main/Chapters/Lesson%204.md) covering lessons 8, 9, 11. \[Notes not completed yet :x:\]
+- [Final Notes]() covering lessons 8, 9, 11. \[Notes not completed yet :x:\]
 
 ## Utils
 The following files consist of functions that are useful, categorized by lessons. 

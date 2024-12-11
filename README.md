@@ -12,7 +12,7 @@ This repo contains the following:
 - [Challenge 2](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Challenges/Solutions/Lujain_Data_Science_Challenge2.ipynb) \[Completed :heavy_check_mark:\]
 
 ## Exams (Midterms)
-- [Original Midterm Exam]() \[Not solved yet :x:\]
+- [Original Midterm Exam](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Exams/Questions/MLR%20503%20Original%20Exam.pdf) \[Not gonna do it again\]
 - [Makeup Midterm Exam]() \[Not solved yet :x:\]
 
 ## Notes
@@ -25,7 +25,7 @@ The following files consist of functions that are useful, categorized by lessons
 - [Lesson 4 - SUPERVISED LEARNING – LINEAR REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/4_linear_regression.py) \[Code completed :heavy_check_mark:\]
 - [Lesson 5 - SUPERVISED LEARNING – LOGISTIC REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/5_logistic_regression.py) \[Code completed :heavy_check_mark:\]
 - Lesson 6 - SUPERVISED LEARNING – REGULARIZATION \[We never really applied this in code, might add later?\]
-- [Lesson 7 - SUPERVISED LEARNING – DECISION TREES AND TREE ENSEMBLES](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/7_decision_trees.py) \[Code not completed yet :x:\]
+- [Lesson 7 - SUPERVISED LEARNING – DECISION TREES AND TREE ENSEMBLES](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/7_decision_trees.py) \[Code completed :heavy_check_mark:\]
 - [Lesson 8 - SUPERVISED LEARNING – SUPPORT VECTOR MACHINES]() \[Code not completed yet :x:\]
 - [Lesson 9 - UNSUPERVISED LEARNING – ANOMALY DETECTION]() \[Code not completed yet :x:\]
 - [Lesson 11 - FEATURE SELECTION AND DIMENSIONALITY REDUCTION]() \[Code not completed yet :x:\]

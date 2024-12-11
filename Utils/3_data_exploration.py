@@ -29,7 +29,7 @@ def concat_df(dfs):
 
 ##### Visualizing attributes #####
 
-def visualize_numerical_attribute(df, col):
+def plot_numerical_attribute(df, col):
     '''Plots histogram of one numerical attrbute'''
     print(f"Median of {col}: {df[col].median()}")
     print(f"Mode of {col}: {df[col].mode()[0]}")
@@ -41,7 +41,7 @@ def visualize_numerical_attribute(df, col):
     plt.title(f"{col} Distribution")
     plt.show()
 
-def visualize_categorical_attribute(df, col):
+def plot_categorical_attribute(df, col):
     '''Plots bar chart of one categorical attribute'''
     print(df[col].value_counts())
 

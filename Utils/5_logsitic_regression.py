@@ -83,6 +83,7 @@ def plot_conf_matrix(y_test, y_pred):
     plt.xlabel('Predicted label')
 
 def get_evaluation_metrics(y_true, y_pred):
+    '''Applies to any binary classification model (including decision trees)'''
     print("Classification Report:")
     print(classification_report(y_true, y_pred))
 

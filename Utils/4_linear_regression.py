@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression, SGDRegressor
@@ -39,6 +40,17 @@ def fit_sgd(X_train, y_train):
     model = SGDRegressor(max_iter=10000, tol=1e-3, eta0=0.01, random_state=42)
     model.fit(X_train, y_train)
     return model
+
+##### Normal equation #####
+def normal_eq(X, y):
+    '''Assuming 2 coefficients for a regression problem'''
+    w_vector = np.linalg.inv(X.T @ X) @ X.T @ y
+    w_0, w_1, w_2 = w_vector
+
+    for index, w in enumerate(w_vector):
+        print(f'w_{index} = {w:.2f}')
+
+    print(f"\h_w(x) = {w_0:.2f} + {w_1:.2f} * x_1 + {w_2:.2f} * x_2")
 
 ##### General functions for regression models #####
 

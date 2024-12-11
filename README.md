@@ -51,3 +51,5 @@ These are all the notebooks that were used to present things in class.
 
 ## Other practical things
 Exploring different datasets, etc... Prof. mentioned that the final exam will have a time-series aspect to it, so these datasets should relate to that as well.
+
+This could be useful: https://www.kaggle.com/code/faressayah/stock-market-analysis-prediction-using-lstm

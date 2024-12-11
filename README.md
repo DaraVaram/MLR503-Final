@@ -23,7 +23,7 @@ This repo contains the following:
 The following files consist of functions that are useful, categorized by lessons. 
 - [Lesson 3 - DATA, CORRELATIONS, PREPROCESSING, AND PREPARATION](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/3_data_exploration.py) \[Code completed :heavy_check_mark:\]
 - [Lesson 4 - SUPERVISED LEARNING – LINEAR REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/4_linear_regression.py) \[Code completed :heavy_check_mark:\]
-- [Lesson 5 - SUPERVISED LEARNING – LOGISTIC REGRESSION]() \[Code not completed yet :x:\]
+- [Lesson 5 - SUPERVISED LEARNING – LOGISTIC REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/5_logistic_regression.py) \[Code completed :heavy_check_mark:\]
 - [Lesson 6 - SUPERVISED LEARNING – REGULARIZATION]() \[Code not completed yet :x:\]
 - [Lesson 7 - SUPERVISED LEARNING – DECISION TREES AND TREE ENSEMBLES]() \[Code not completed yet :x:\]
 - [Lesson 8 - SUPERVISED LEARNING – SUPPORT VECTOR MACHINES]() \[Code not completed yet :x:\]

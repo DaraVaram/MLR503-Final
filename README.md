@@ -7,6 +7,11 @@ This repo contains the following:
 - Solutions to midterm (both original and makeup midterm)
 - A compilation of functions in a singular utils.py for reference during the final 
 
+## Assignments
+- [Assignment 1](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Assignments/Solutions/LujainKhalil_Assignment_1.ipynb) \[Completed :heavy_check_mark:\]
+- [Assignment 2](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Assignments/Solutions/LujainKhalil_Assignment_2.ipynb) \[Completed :heavy_check_mark:\]
+- [Assignment 3](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Assignments/Solutions/LujainKhalil_Assignment_3.ipynb) \[Completed :heavy_check_mark:\]
+
 ## Data Science Challenges
 - [Challenge 1](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Challenges/Solutions/Lujain_Data_Science_Challenge1.ipynb) \[Completed :heavy_check_mark:\]
 - [Challenge 2](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Challenges/Solutions/Lujain_Data_Science_Challenge2.ipynb) \[Completed :heavy_check_mark:\]

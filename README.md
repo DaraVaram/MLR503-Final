@@ -43,8 +43,8 @@ These are all the notebooks that were used to present things in class.
 ## Assignments
 
 ## Data Science Challenges
-- [Challenge 1]() \[Pending :x:\]
-- [Challenge 2]() \[Pending :x:\]
+- [Challenge 1]() \[Completed :heavy_check_mark:\]
+- [Challenge 2]() \[Completed :heavy_check_mark:\]
 
 ## Other practical things
 Exploring different datasets, etc... Prof. mentioned that the final exam will have a time-series aspect to it, so these datasets should relate to that as well.

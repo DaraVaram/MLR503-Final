@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import log_loss
+from sklearn.metrics import log_loss, confusion_matrix, classification_report, roc_auc_score, roc_curve, accuracy_score, precision_score, recall_score, f1_score
 
 ##### Logisitic regression
 def fit_logisitc(X_train, y_train):
@@ -63,6 +63,49 @@ def plot_decision_boundary(model, X, y):
     plt.scatter(X[feature_1], X[feature_2], c=y, s=20, edgecolor='k', cmap='rainbow')
     plt.title("Decision Boundary")
     plt.show()
+
+def plot_conf_matrix(y_test, y_pred):
+    cm = confusion_matrix(y_test, y_pred)
+
+    class_names=[0,1]
+    _, ax = plt.subplots()
+    tick_marks = np.arange(len(class_names))
+
+    plt.xticks(tick_marks, class_names)
+    plt.yticks(tick_marks, class_names)
+
+    sns.heatmap(pd.DataFrame(cm), cmap='Greens', annot=True)
+    ax.xaxis.set_label_position("top")
+    
+    plt.tight_layout()
+    plt.title('Confusion matrix')
+    plt.ylabel('Actual label')
+    plt.xlabel('Predicted label')
+
+def get_evaluation_metrics(y_true, y_pred):
+    print("Classification Report:")
+    print(classification_report(y_true, y_pred))
+
+    print("Confusion Matrix:")
+    print(confusion_matrix(y_true, y_pred), '\n')
+
+    print(f"Accuracy: {accuracy_score(y_true, y_pred):.4f}")
+    print(f"Precision: {precision_score(y_true, y_pred):.4f}")
+    print(f"Recall: {recall_score(y_true, y_pred):.4f}")
+    print(f"F1-Score: {f1_score(y_true, y_pred):.4f}")
+
+def plot_roc_auc(model, y_test, X_test):
+    fpr, tpr, _ = roc_curve(y_test, model.predict_proba(X_test)[:, 1])
+    auc = roc_auc_score(y_test, model.predict_proba(X_test)[:, 1])
+
+    plt.plot(fpr, tpr, label=f"ROC Curve (AUC = {auc:.4f})", linewidth=2)
+    plt.plot([0, 1], [0, 1], 'k--', label="Random Guess")
+    plt.title("ROC Curve")
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.legend()
+    plt.show()
+
 
 ##### Engineering polynomial features #####
 def plot_decision_boundary_poly(model, X, y, features_generator):

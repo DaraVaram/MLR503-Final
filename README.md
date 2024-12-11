@@ -8,8 +8,8 @@ This repo contains the following:
 - A compilation of functions in a singular utils.py for reference during the final 
 
 ## Data Science Challenges
-- [Challenge 1]() \[Pending :x:\]
-- [Challenge 2]() \[Pending :x:\]
+- [Challenge 1](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Challenges/Solutions/Lujain_Data_Science_Challenge1.ipynb) \[Completed :heavy_check_mark:\]
+- [Challenge 2](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Challenges/Solutions/Lujain_Data_Science_Challenge2.ipynb) \[Completed :heavy_check_mark:\]
 
 ## Exams (Midterms)
 - [Original Midterm Exam]() \[Not solved yet :x:\]

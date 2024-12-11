@@ -1,7 +1,4 @@
-import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression, SGDRegressor
@@ -10,12 +7,14 @@ from sklearn.metrics import root_mean_squared_error, r2_score
 ##### Visuals #####
 
 def plot_scatter(x, y, x_label, y_label):
+    '''Assuming X contains one feature only'''
     plt.scatter(x, y)
     plt.xlabel(x_label)
     plt.ylabel(y_label)
     plt.show()
 
 def plot_scatter_line(X, y, X_test, y_pred, x_label, y_label):
+    '''Scatter plot with the regression line'''
     plt.scatter(X, y, color='blue', label='Actual data')
     plt.plot(X_test, y_pred, color='red', label='Regression line') # Another plt.plot could be added to compare to fits in one graph
     plt.xlabel(x_label)
@@ -44,10 +43,12 @@ def fit_sgd(X_train, y_train):
 ##### General functions for regression models #####
 
 def split(X, y, split = 0.2):
+    '''Splits data into testing and training'''
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=split, random_state=42)
     return X_train, X_test, y_train, y_test
 
-def print_hyp(model):
+def print_hyp_ols(model):
+    '''Prints hypothesis of OLS model'''
     w_0 = model.intercept_  
     w_1 = model.coef_  
     print(f"Intercept (w_0): {w_0}")
@@ -56,7 +57,7 @@ def print_hyp(model):
 
 def adjust_standard_coef(model, scaler):
     '''
-    - Adjust coefficients based on scaled data for an interpretabel hypothesis
+    - Adjust coefficients based on scaled data for an interpretable OLS hypothesis
     - Assumes StandardScaler was used
     '''
     w_0 = model.intercept_  
@@ -74,7 +75,7 @@ def adjust_standard_coef(model, scaler):
 
 def adjust_min_max_coef(model, scaler):
     '''
-    - Adjust coefficients based on scaled data for an interpretabel hypothesis
+    - Adjust coefficients based on scaled data for an interpretable OLS hypothesis
     - Assumes MinMaxScaler was used
     '''
     w_0 = model.intercept_  
@@ -92,6 +93,6 @@ def adjust_min_max_coef(model, scaler):
     print(f"h_w(x) = {w_0_adjusted} + {w_1_adjusted} * x")
 
 def get_regression_metrics(y, y_pred):
-    '''For some reason this never works but whatever heres the code anyway'''
+    '''For some reason this never works because import issues but whatever heres the code anyway'''
     print(f"RMSE = {root_mean_squared_error(y, y_pred)}")
     print(f"R^2 = {r2_score(y, y_pred)}")

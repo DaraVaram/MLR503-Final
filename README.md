@@ -41,6 +41,9 @@ These are all the notebooks that were used to present things in class.
 - [Lesson 11 - t-SNE](https://github.com/DaraVaram/MLR503-Final/blob/main/Notebooks/LESSON%2011%20-%20tSNE.ipynb) \[Incomplete notebook - Takes too long to run :x:\]
  
 ## Assignments
+- [ASSIGNMENT 1](https://github.com/DaraVaram/MLR503-Final/blob/main/Assignments/MLR503%20-%20Assignment%201%20(Dara).ipynb) \[95/100 :heavy_check_mark:\]
+- [ASSIGNMENT 2](https://github.com/DaraVaram/MLR503-Final/blob/main/Assignments/MLR503%20-%20Assignment%202%20(Dara).ipynb) \[98/100 :heavy_check_mark:\]
+- [ASSIGNMENT 3](https://github.com/DaraVaram/MLR503-Final/blob/main/Assignments/MLR503%20-%20Assignment%203%20(Dara)%20(1).ipynb) \[54/55 :heavy_check_mark:\]
 
 ## Data Science Challenges
 - [Challenge 1]() \[Completed :heavy_check_mark:\]

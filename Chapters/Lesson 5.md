@@ -54,7 +54,7 @@ This is where we need to know about the confusion matrix:
 
 - Accuracy: $\frac{\text{TN} + \text{TP}} {\text{All values}}$
 - Precision: $\frac{\text{TP}}{TP + FP}$. Of all instances predicted positive, how many were actually positive?
-- Recall: $\frac{\text{TP}}{TP + TN}$. Of all actual positive instances, how many were correctly predicted as positive?
+- Recall: $\frac{\text{TP}}{TP + FN}$. Of all actual positive instances, how many were correctly predicted as positive?
 - F1-Score: $2 \frac{\text{Precision Recall}}{\text{Precision} + \text{Recall}}$
 
 ### Interpretation of Coefficients

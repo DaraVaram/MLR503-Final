@@ -45,23 +45,25 @@ def plot_scatter_classes(X, y, title):
     plt.ylabel(X.columns[1])
     plt.show()
 
-def plot_decision_boundary(model, X, y):
+def plot_decision_boundary_log(model, X, y):
     '''Plots decision boundary of logistic regression, assuming two features in X'''
+    
     feature_1, feature_2 = X.columns[0], X.columns[1]
-    x_min, x_max = X[feature_1].min() - 0.1, X[feature_1].max() + 0.1
-    y_min, y_max = X[feature_2].min() - 0.1, X[feature_2].max() + 0.1
-    
-    xx, yy = np.meshgrid(np.linspace(x_min, x_max, 500), np.linspace(y_min, y_max, 500))
-    grid_points = np.c_[xx.ravel(), yy.ravel()]
-    grid_df = pd.DataFrame(grid_points, columns=[feature_1, feature_2])
-    
-    Z = model.predict(grid_df)
-    Z = Z.reshape(xx.shape)
-    
-    plt.contourf(xx, yy, Z, alpha=0.4, cmap='rainbow')
-    plt.contour(xx, yy, Z, colors='k', linewidths=2)
+    feature_1_min, feature_1_max = X[feature_1].min() - 0.1, X[feature_1].max() + 0.1
+
+    coef = model.coef_
+    intercept = model.intercept_   
+
+    x_values = np.linspace(feature_1_min, feature_1_max, 100)
+    decision_boundary = -(coef[0][0] * x_values + intercept) / coef[0][1]
+
     plt.scatter(X[feature_1], X[feature_2], c=y, s=20, edgecolor='k', cmap='rainbow')
-    plt.title("Decision Boundary")
+    plt.plot(x_values, decision_boundary, color='black', linestyle='--', label='Decision Boundary')
+    plt.xlabel(feature_1)
+    plt.ylabel(feature_2)
+    plt.title('Logistic Regression Decision Boundary')
+
+    plt.legend()
     plt.show()
 
 def plot_conf_matrix(y_test, y_pred):

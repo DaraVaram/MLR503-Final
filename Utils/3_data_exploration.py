@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, OneHotEncoder, OrdinalEncoder
 from scipy.stats import pearsonr, spearmanr, chi2_contingency, pointbiserialr
 from sklearn.impute import SimpleImputer
+from sklearn.model_selection import train_test_split
 
 ##### Data exploration #####
 
@@ -25,7 +26,12 @@ def drop_columns(df, cols):
 
 def concat_df(dfs):
     '''Expected a list dfs = [df1, df2, ...]'''
-    return pd.concat(dfs, axis=1)
+    return pd.concat(dfs, axis=1, ignore_index=True)
+
+def split_data(df):
+    '''Splits data (includes target and features) into training and testing'''
+    train_df, test_df = train_test_split(df, test_size=0.8, random_state=42)
+    return train_df, test_df
 
 ##### Visualizing attributes #####
 

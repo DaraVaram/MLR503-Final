@@ -31,7 +31,7 @@ The following files consist of functions that are useful, categorized by lessons
 - [Lesson 5 - SUPERVISED LEARNING – LOGISTIC REGRESSION](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/5_logistic_regression.py) \[Code completed :heavy_check_mark:\]
 - Lesson 6 - SUPERVISED LEARNING – REGULARIZATION \[We never really applied this in code, might add later?\]
 - [Lesson 7 - SUPERVISED LEARNING – DECISION TREES AND TREE ENSEMBLES](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/7_decision_trees.py) \[Code completed :heavy_check_mark:\]
-- [Lesson 8 - SUPERVISED LEARNING – SUPPORT VECTOR MACHINES]() \[Code not completed yet :x:\]
+- [Lesson 8 - SUPERVISED LEARNING – SUPPORT VECTOR MACHINES](https://github.com/DaraVaram/MLR503-Final/blob/lujain/Utils/8_support_vector_machines.py) \[Code completed :heavy_check_mark:\]
 - [Lesson 9 - UNSUPERVISED LEARNING – ANOMALY DETECTION]() \[Code not completed yet :x:\]
 - [Lesson 11 - FEATURE SELECTION AND DIMENSIONALITY REDUCTION]() \[Code not completed yet :x:\]
 
